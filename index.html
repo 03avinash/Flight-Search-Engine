@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Flight Search Engine</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript">
+      function validate() {
+        var OriginCity = document.flight_form.OriginCity;
+        var DestinationCity = document.flight_form.DestinationCity;
+        var date = document.flight_form.date;
+        var returndate = document.flight_form.returndate;
+        var Passengers = document.flight_form.Passengers;
+
+      if(OriginCity.value.length <=0) {
+        alert("Origin City is required");
+        OriginCity.focus();
+        return false;
+      }
+      if(DestinationCity.value.length <=0) {
+        alert("Destination City is required");
+        OriginCity.focus();
+        return false;
+      }
+      if(date.value.length <=0) {
+        alert("date is required");
+        OriginCity.focus();
+        return false;
+      }
+      if(returndate.value.length <=0) {
+        alert("return date is required");
+        OriginCity.focus();
+        return false;
+      }
+      if(Passengers.value.length <=0) {
+        alert("Passengers is required");
+        OriginCity.focus();
+        return false;
+      }
+        return false;
+      }
+    </script>
+  </head>
+  <body>
+
+   <!---header---->
+
+<div class="top">
+  <h1>Flight Search Engine</h1>
+</div>
+
+   <!---bottom--->
+
+<div class="flexbottom">
+
+  <!---leftblock--->
+
+  <div class="left">
+
+    <div class="leftsidebtn">
+      <a href="http://www.theemergingicons.com/"><button style="border-right: 0px;" class="btn" type="button" name="">Oney way</button></a>
+      <a href="http://www.theemergingicons.com/"><button class="btn" type="button" name="">Return</button></a>
+    </div>
+
+   <div class="leftdata">
+     <form class="" action="index.html" method="" name="flight_form" onsubmit="return validate()">
+       <input class="data" type="text" name="OriginCity" value="Entre Origin City"><br>
+       <input class="data" type="text" name="DestinationCity" value="Entre Destination City"><br>
+       <input class="date" type="date" name="date" value="date"><br>
+       <input class="date" type="date" name="returndate" value="return date"><br>
+       <input class="data" type="text" name="Passengers" value="Passengers"><br>
+       <input class="submit" type="submit" name="Search" value="Search">
+     </form>
+   </div>
+
+   <div class="leftbottom">
+      <h2>Refine Flight Search</h2>
+   <div class="pointers">
+      <p>0</p><p>10000</p>
+  </div>
+     <input class="range" type="range" name="" value="">
+  </div>
+
+</div>
+
+<!---rightblock--->
+
+  <div class="right">
+
+  <div class="header">
+     <h2>Pune > Delhi > Pune</h2>
+     <pre>
+  Depart : 1st jan 2012
+  Depart : 1st jan 2012
+    </pre>
+  </div>
+
+ <div class="rightbottom">
+
+<div class="rightdata">
+  <h2>Rs. 9.500.00</h2>
+   <table>
+     <tr>
+       <td class="td">AI-202</td>
+       <td>AI-203</td>
+     </tr>
+     <tr>
+       <td style="font-weight: bold;" class="td">PNQ > DEL</td>
+       <td style="font-weight: bold;">DEL > PNQ</td>
+     </tr>
+     <tr>
+       <td class="td">Depart: 10:00 AM</td>
+       <td>Depart: 08:00 PM</td>
+     </tr>
+     <tr>
+       <td class="td">Arrive: 12:00 AM</td>
+       <td>Arrive: 11:00 PM</td>
+     </tr>
+   </table>
+</div>
+
+<div class="rightimage">
+  <center>
+    <img src="images/flight.jpg" alt=""><br>
+    <button type="button" name="button">Book this flight</button>
+    </center>
+</div>
+
+ </div>
+
+
+ <div class="rightbottom">
+
+ <div class="rightdata">
+  <h2>Rs. 9.500.00</h2>
+   <table>
+     <tr>
+       <td class="td">AI-202</td>
+       <td>AI-203</td>
+     </tr>
+     <tr>
+       <td style="font-weight: bold;" class="td">PNQ > DEL</td>
+       <td style="font-weight: bold;">DEL > PNQ</td>
+     </tr>
+     <tr>
+       <td class="td">Depart: 10:00 AM</td>
+       <td>Depart: 08:00 PM</td>
+     </tr>
+     <tr>
+       <td class="td">Arrive: 12:00 AM</td>
+       <td>Arrive: 11:00 PM</td>
+     </tr>
+   </table>
+ </div>
+
+ <div class="rightimage">
+  <center>
+    <img src="images/flight.jpg" alt=""><br>
+    <button type="button" name="button">Book this flight</button>
+    </center>
+    </div>
+</div>
+
+<div class="rightbottom">
+
+<div class="rightdata">
+ <h2>Rs. 9.500.00</h2>
+  <table>
+    <tr>
+      <td class="td">AI-202</td>
+      <td>AI-203</td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold;" class="td">PNQ > DEL</td>
+      <td style="font-weight: bold;">DEL > PNQ</td>
+    </tr>
+    <tr>
+      <td class="td">Depart: 10:00 AM</td>
+      <td>Depart: 08:00 PM</td>
+    </tr>
+    <tr>
+      <td class="td">Arrive: 12:00 AM</td>
+      <td>Arrive: 11:00 PM</td>
+    </tr>
+  </table>
+</div>
+
+<div class="rightimage">
+ <center>
+   <img src="images/flight.jpg" alt=""><br>
+   <button type="button" name="button">Book this flight</button>
+   </center>
+   </div>
+  </div>
+</div>
+
+
+  </body>
+</html>
